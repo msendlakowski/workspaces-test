@@ -1,0 +1,14 @@
+{
+	"name": "package-a",
+	"version": "0.0.1",
+	"dependencies": {
+	},
+	"devDependencies": {
+		"marko": "^3",
+		"marko-widgets": "^6"
+    },
+	"peerDependencies": {
+		"marko": "^3 || ^4",
+		"marko-widgets": "^6"
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "name": "workspaces-test",
+    "version": "0.0.1",
+    "scripts": {
+        "clean:git": "git clean -xdf"
+    },
+    "private": true,
+    "workspaces": {
+        "packages": ["packages/*"]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/msendlakowski/workspaces-test.git"
+    },
+    "dependencies": {
+        "marko": "^4"
+    },
+    "engines": {
+      "node": "~10.16.0",
+      "yarn": "~1.19.0"
+    }
+}

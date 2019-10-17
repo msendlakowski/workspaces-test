@@ -1,0 +1,53 @@
+Arguments: 
+  /Users/msendlakowski/.nvm/versions/node/v10.16.0/bin/node /Users/msendlakowski/.nvm/versions/node/v10.16.0/bin/yarn
+
+PATH: 
+  /Users/msendlakowski/.nvm/versions/node/v10.16.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/msendlakowski/.npm-packages/bin:/Users/msendlakowski/.npm-packages/bin/marko
+
+Yarn version: 
+  1.19.1
+
+Node version: 
+  10.16.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Invariant Violation: could not find a copy of marko to link in /Users/msendlakowski/repos/workspaces-test-2/node_modules/package-a/node_modules
+      at invariant (/Users/msendlakowski/.nvm/versions/node/v10.16.0/lib/node_modules/yarn/lib/cli.js:2314:15)
+      at PackageLinker.<anonymous> (/Users/msendlakowski/.nvm/versions/node/v10.16.0/lib/node_modules/yarn/lib/cli.js:48716:7)
+      at Generator.next (<anonymous>)
+      at step (/Users/msendlakowski/.nvm/versions/node/v10.16.0/lib/node_modules/yarn/lib/cli.js:304:30)
+      at /Users/msendlakowski/.nvm/versions/node/v10.16.0/lib/node_modules/yarn/lib/cli.js:315:13
+      at process._tickCallback (internal/process/next_tick.js:68:7)
+
+npm manifest: 
+  {
+      "name": "workspaces-test",
+      "version": "0.0.1",
+      "scripts": {
+          "clean:git": "git clean -xdf"
+      },
+      "private": true,
+      "workspaces": {
+          "packages": ["packages/*"]
+      },
+      "repository": {
+          "type": "git",
+          "url": "https://github.com/msendlakowski/workspaces-test.git"
+      },
+      "dependencies": {
+          "marko": "^4"
+      },
+      "engines": {
+        "node": "~10.16.0",
+        "yarn": "~1.19.0"
+      }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
